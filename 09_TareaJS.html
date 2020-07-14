@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="es">
+   <head>
+       <meta charset="utf-8">
+       <title>09 Tarea con JS</title>
+       <!-- agregar icono -->
+       <style>
+           #indice{
+                color: #1AA59A;
+               font-family: monospace;
+               font-size: 20px;
+           }
+           
+           #texto{                            /* ingrese algo de estilo a cada una de la paginas */
+               color: #227066;
+               font-family: monospace;
+           }
+           
+           #indice{
+               color: #227066;
+               font-family: monospace;
+           }
+           
+       </style>
+       <script>
+           
+           var pregunta;
+               do{   
+                    var fecha=parseInt(prompt("¿Cuál es tu fecha de nacimiento? "));// imprimimos en una ventana emergente la pregunta 
+                   
+                   
+                   
+                   // si la condicion esta entre el rango de fechas  se cumple se imprimirá ...
+                    if (fecha>=1994 && fecha<=2010){
+                        alert("Tu generacion es Z ")    //este mensaje 
+                       
+                   }
+                    // si la condicion esta entre el rango de fechas  se cumple se imprimirá ...
+                   else if(fecha>=1981 && fecha<=1993){
+                       alert("Tu generación es Y ")     //este mensaje 
+                       
+                   }
+                   // si la condicion esta entre el rango de fechas  se cumple se imprimirá ...
+                   else if(fecha>=1969 && fecha<=1980){
+                       alert("Tu generacion es X ")     //este mensaje 
+                       
+                   }
+                   // si la condicion esta entre el rango de fechas  se cumple se imprimirá ...
+                   else if (fecha>=1949 && fecha<=1968){
+                       alert("Tu generación es Baby Boom ")     //este mensaje 
+                       
+                   }
+                   
+                   // cuando se obtenga el resultado de generacion se volverá a preguntar si la persona quiere saber de nuevo estos datos
+                   pregunta=prompt("¿Quiéres saberlo de nuevo?");
+                   
+                   
+               }while(pregunta==="si");
+         
+            
+            
+       </script>
+    </head>
+    <body>
+         <h1 id="indice"> Índice </h1>
+       <li><a href="06_TareaJs.html" id="texto">Tarea-6</a></li>
+       
+       <li><a href="07_TareaJS.html" id="texto">Tarea-7</a></li>
+       
+       <li><a href="08_TareaJS.html" id="texto">Tarea-8</a></li>
+       
+       <li><a href="09_TareaJS.html" id="texto">Tarea-9</a></li>
+       
+       <li><a href="10_TareaJS.html" id="texto">Tarea-10</a></li>
+    </body>
+</html>

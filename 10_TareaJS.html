@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="es">
+   <head>
+       <meta charset="utf-8">
+       <title>10 Tarea con JS</title>
+       <!-- agregar icono -->
+       <style>
+           #indice{
+                color: #1AA59A;
+               font-family: monospace;
+               font-size: 20px;
+           }
+           
+           #texto{                            /* ingrese algo de estilo a cada una de la paginas */
+               color: #227066;
+               font-family: monospace;
+           }
+           
+           #indice{
+               color: #227066;
+               font-family: monospace;
+           }
+           
+       </style>
+       <script>
+           var usuario=(prompt("Desea viajar?"));// se le preguntará al usuario si desea viajar
+            while(usuario=="si"){ // si el usuario dice si entonces se le preguntará lo siguiente...
+                
+                //el mes que desea viajar
+                mes=(prompt("¿Cuál es el mes en que viajarás?"));
+               
+                
+                //la condicion dice que si el usuario teclea enero ...
+                if(mes=="enero"){
+                    alert("Cancún = $10,000 \nDisneylandia = $20,000 \nIxtapa = $8,000 \nLas Vegas = $18,000")///recibira esta informacion
+                    usuario=(prompt("Desea viajar?"));// por lo mismo se le volverá a preguntar si desea viajar de nuevo
+                }
+                else if (mes=="febrero"){
+                    alert("viajes para FEBRERO \nCancún = $10,000 \nDisneylandia = $20,000 \nIxtapa = $8,000 \nLas Vegas = $18,000")
+                    usuario=(prompt("Desea viajar?"));
+                }
+                else if (mes=="marzo"){
+                    alert("viajes para MARZO \nCancún = $10,000 \nDisneylandia = $20,000 \nIxtapa = $8,000 \nLas Vegas = $18,000")  //asi sucesivamente con los demás
+                    usuario=(prompt("Desea viajar?"));
+                }
+                else if (mes=="abril"){
+                    alert("viajes para ABRIL \nCancún = $10,000 \nDisneylandia = $20,000 \nIxtapa = $8,000 \nLas Vegas = $18,000")
+                    usuario=(prompt("Desea viajar?"));
+                }
+                else if (mes=="mayo"){
+                    alert("viajes para MAYO \nCancún = $10,000 \nDisneylandia = $20,000 \nIxtapa = $8,000 \nLas Vegas = $18,000")
+                    usuario=(prompt("Desea viajar?"));
+                }
+                else if (mes=="junio"){
+                    alert("viajes para JUNIO \nCancún = $10,000 \nDisneylandia = $20,000 \nIxtapa = $8,000 \nLas Vegas = $18,000")
+                    usuario=(prompt("Desea viajar?"));
+                }
+                
+                //si el usuario teclea julio a partir de los siguientes meses cambiará la tarifa de precios de cada viaje dependiendo la zona
+                else if (mes=="julio"){
+                    alert("viajes para JULIO \nCancún = $7,000 \nDisneylandia = $12,000 \nIxtapa = $5,000 \nLas Vegas = $12,000")//los precios
+                    usuario=(prompt("Desea viajar?"));//le preguntará de nuevo
+                }
+                else if (mes=="agosto"){
+                    alert("viajes para AGOSTO \nCancún = $7,000 \nDisneylandia = $12,000 \nIxtapa = $5,000 \nLas Vegas = $12,000")
+                    usuario=(prompt("Desea viajar?"));
+                }
+                else if (mes=="septiembre"){
+                    alert("viajes para SEPTIEMBRE \nCancún = $7,000 \nDisneylandia = $12,000 \nIxtapa = $5,000 \nLas Vegas = $12,000")
+                    usuario=(prompt("Desea viajar?"));
+                }
+                else if (mes=="octubre"){
+                    alert("viajes para OCTUBRE \nCancún = $7,000 \nDisneylandia = $12,000 \nIxtapa = $5,000 \nLas Vegas = $12,000")
+                    usuario=(prompt("Desea viajar?"));
+                }
+                else if (mes=="noviembre"){
+                    alert("viajes para NOVIEMBRE \nCancún = $7,000 \nDisneylandia = $12,000 \nIxtapa = $5,000 \nLas Vegas = $12,000")
+                    usuario=(prompt("Desea viajar?"));
+                }
+                else if (mes=="diciembre"){
+                    alert("viajes para DICIEMBRE \nCancún = $7,000 \nDisneylandia = $12,000 \nIxtapa = $5,000 \nLas Vegas = $12,000")
+                    usuario=(prompt("Desea viajar?"));
+                }
+                else {
+                    alert ("Parámetro no válido")/// si no ingresa valor entonces le aparecerá este mensaje de parámetro no válido
+                }
+                
+            }
+           
+           
+       </script>
+    </head>
+    <body>
+         <h1 id="indice"> Índice </h1>
+       <li><a href="06_TareaJs.html" id="texto">Tarea-6</a></li>
+       
+       <li><a href="07_TareaJS.html" id="texto">Tarea-7</a></li>
+       
+       <li><a href="08_TareaJS.html" id="texto">Tarea-8</a></li>
+       
+       <li><a href="09_TareaJS.html" id="texto">Tarea-9</a></li>
+       
+       <li><a href="10_TareaJS.html" id="texto">Tarea-10</a></li>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="es">
+   <head>
+       <meta charset="utf-8">
+       <title>08 Tarea con JS</title>
+       <!-- agregar icono -->
+       <style>
+           #indice{
+                color: #1AA59A;
+               font-family: monospace;
+               font-size: 20px;
+           }
+           
+           #texto{                            /* ingrese algo de estilo a cada una de la paginas */
+               color: #227066;
+               font-family: monospace;
+           }
+           
+           #indice{
+               color: #227066;
+               font-family: monospace;
+           }
+           
+       </style>
+       <script>
+           
+           //mensaje que le permitira saber que numero teclear en la ventana emergente
+            var sabor=(prompt("¿Qué topping eliges?\n\n HELADO SIN TOPPING teclea: 1 \n OREO teclea: 2 \n KITKAT teclea: 3 \n CAJETA teclea: 4 \n CHOCONUEZ teclea: 5"));
+           
+           
+           //estos son los topping que pueden escoger y a cada variable se le dio una tarifa ya predefinida
+            var top1=20;
+            var top2=10;
+            var top3=15;
+            var top4=10;
+            var top5=20;
+           
+           
+           
+           // si la condicion dice que si el sabor es igual a 1 entonces le corresponden las siguientes acciones...
+           if (sabor==1){
+               
+               //si quiere el helado sin topping el precio de su helado será el top 1
+               precio=top1
+               alert("El helado sin topping cuesta: "+precio);// concatenamos la variable precio para imprimirla
+           }
+           
+           //la siguiente condicion dice que si el sabor que se elige es la tecla dos le corresponde el sabor de oreo por lo tanto le corresponden las siguientes acciones...
+           else if (sabor==2){
+               
+               // el precio del helado con el topping de oreo será del valor del helado sin topping mas el extra de valor con el topping sabor oreo
+               precio=top1+top2
+               alert("El helado OREO cuesta: "+precio);
+           }
+           else if (sabor==3){
+               precio=top1+top3
+               alert("El helado KitKat cuesta: "+precio);
+           }
+           else if (sabor==4) {
+               precio=top1+top4                                 //asi sucesivamente on los demás toppings
+               alert("El helado Cajeta cuesta: "+precio);
+           }
+           else if (sabor==5){
+               precio=top1+top5
+               alert("El helado ChocoNuez cuesta: "+precio);
+           }
+           else{
+               alert("No tenemos ese topping :(");// si elige otro sabor mencionamos que no tenemos ese topping
+           }
+           
+       </script>
+    </head>
+    <body>
+         <h1 id="indice"> Índice </h1>
+       <li><a href="06_TareaJs.html" id="texto">Tarea-6</a></li>
+       
+       <li><a href="07_TareaJS.html" id="texto">Tarea-7</a></li>
+       
+       <li><a href="08_TareaJS.html" id="texto">Tarea-8</a></li>
+       
+       <li><a href="09_TareaJS.html" id="texto">Tarea-9</a></li>
+       
+       <li><a href="10_TareaJS.html" id="texto">Tarea-10</a></li>
+    </body>
+</html>

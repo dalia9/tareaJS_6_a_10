@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+       <meta charset="utf-8">
+       <title>06 Tarea con JS</title>
+       <!-- agregar icono -->
+       <style>
+           #indice{
+                color: #1AA59A;
+               font-family: monospace;
+               font-size: 20px;
+           }
+           
+           #texto{                            /* ingrese algo de estilo a cada una de la paginas */
+               color: #227066;
+               font-family: monospace;
+           }
+           
+           #indice{
+               color: #227066;
+               font-family: monospace;
+           }
+           
+       </style>
+       
+          
+        <script>
+            function sumaDePares(){// se aplica una funcion para identificarla en la ventana emergente
+            var suma=0 // la suma no resive valor
+           for(i=1; i<=100; i++){ // con la variable i se va del numero uno hasta el 100 incrementendo
+               if(i%2==0){ //solo obtenemos los numeros pares 
+                   document.write("<br>"+i)//imprimimos los numeros pares la suma
+                suma+=i;// la operacion de la suma de todos los numeros pares
+                   
+               }
+              
+           }
+            return suma//regresamos la suma
+        }
+        
+        alert("La suma de los numeros pares del 1 al 100 es: " + sumaDePares())//obteniendo el resultado de la suma ponemos el resultado en una ventana emergente   
+               
+        
+            
+          
+            
+        </script>
+    </head>
+    <body>
+         <h1 id="indice"> Índice </h1>
+       <li><a href="06_TareaJs.html" id="texto">Tarea-6</a></li>
+       
+       <li><a href="07_TareaJS.html" id="texto">Tarea-7</a></li>
+       
+       <li><a href="08_TareaJS.html" id="texto">Tarea-8</a></li>
+       
+       <li><a href="09_TareaJS.html" id="texto">Tarea-9</a></li>
+       
+       <li><a href="10_TareaJS.html" id="texto">Tarea-10</a></li>
+    </body>
+</html>

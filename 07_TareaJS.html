@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+       <meta charset="utf-8">
+       <title>07 Tarea con JS</title>
+       <!-- agregar icono -->
+       <style>
+           #indice{
+                color: #1AA59A;
+               font-family: monospace;
+               font-size: 20px;
+           }
+           
+           #texto{                            /* ingrese algo de estilo a cada una de la paginas */
+               color: #227066;
+               font-family: monospace;
+           }
+           
+           #indice{
+               color: #227066;
+               font-family: monospace;
+           }
+           
+       </style>
+       <script>
+            var empleado=parseInt(prompt("¿Cuánto gana el empleado? "));//por medio de la ventana emergente pregutamos cuanto gana un empleado cualquier numero
+            var cat=(prompt("¿Cuál es su categoría? "));// pregumtamos su categoría
+            
+           
+           //hacemos las variables con un valor estable
+            var cat1=.15;
+            var cat2=.10;
+            var cat3=.08;
+            var cat4=.07;
+            
+           
+           // si las condiciones del if son que si la categoria es igual al numero1
+            if (cat==1){
+                sueldo=empleado*cat1+empleado// le correponde un sueldo de la categoria 1 mas el mismo sueldo
+                alert("Su nuevo sueldo es: "+sueldo);
+            }
+           else if (cat==2){// si es categoría 2 le corresponde...
+               
+               //el resultado del sueldo  or la categoria 2  mas su mismo sueldo
+                sueldo=empleado*cat2+empleado
+                alert("Su nuevo sueldo es: "+sueldo);
+            }
+           else if (cat==3){
+                sueldo=empleado*cat3+empleado
+                alert("Su nuevo sueldo es: "+sueldo);       //asi sucesivamente con las demás categorías
+            }
+            else if(cat==4){
+                sueldo=empleado*cat4+empleado
+                alert("Su nuevo sueldo es: "+sueldo);
+            }
+           else{
+               alert("agregue los datos correspondientes por favor ");
+           }
+           
+           
+       
+       </script>
+    </head>
+    <body>
+         <h1 id="indice"> Índice </h1>
+       <li><a href="06_TareaJs.html" id="texto">Tarea-6</a></li>
+       
+       <li><a href="07_TareaJS.html" id="texto">Tarea-7</a></li>
+       
+       <li><a href="08_TareaJS.html" id="texto">Tarea-8</a></li>
+       
+       <li><a href="09_TareaJS.html" id="texto">Tarea-9</a></li>
+       
+       <li><a href="10_TareaJS.html" id="texto">Tarea-10</a></li>
+    </body>
+</html>
